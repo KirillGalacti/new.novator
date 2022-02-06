@@ -63,8 +63,16 @@
             <div class="container">
                 <div class="device">
                     <div class="hidden_block">
-                        <div class="drosel" id="text">
-                            <img src="img/0300.png" alt="" class="img_drosel">
+                        <div class="drosel">
+                            <img src="img/flask.png" alt="" class="img" id="second">
+                            <img src="img/control_unit.png" alt="" class="img" id="third">
+                            <img src="img/hydraulic.png" alt="" class="img" id="fourth">
+                            <img src="img/hydraulic_cilindres.png" alt="" class="img" id="fifth">
+                            <img src="img/manometer.png" alt="" class="img" id="sixth">
+                            <img src="img/motor.png" alt="" class="img" id="seventh">
+                            <img src="img/pressure_gauge_with_distributor.png" alt="" class="img" id="eighth">
+                            <img src="img/pumping_station.png" alt="" class="img" id="ninth">
+                            <img src="img/throttles.png" alt="" class="img" id="tenth">
                         </div>
                     </div>
                     <!--Создать блоки и подогнать их по элементам установки-->
@@ -79,19 +87,20 @@
                             </button>
                           </h2>
                           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ol class="list">
-                                    <li  class="on_hover_1">1000.0400.0000 Блок манометра малый</li>
-                                    <li class="on_hover">1000.0410.0000 Блок манометра большой</li>
-                                    <li id="btn1" class="on_hover user-select-none">1000.0300.0000 Блок дроссельного клапана</li>
-                                    <li class="on_hover">1000.0200.0000 Блок Гидромотор-Гидронасос</li>
-                                    <li class="on_hover">1000.0500.0000 Распределитель Badestnost 2Р40-1А1А1 GKZ1</li>
-                                    <li class="on_hover">1000.0700.0000 Блок конечного выключателя</li>
-                                    <li class="on_hover">1000.0110.0000 Блок одноходового гидроцилиндра</li>
-                                    <li class="on_hover">1000.0100.0000 Блок двуходового гидроцилиндра</li>
-                                    <li class="on_hover">1000.0800.0000 Измерительная колба (расходомер)</li>
+                            <div class="accordion-body row">
+                                <ol class="list_1 col">
+                                    <li id="btn1" class="list_item">Измерительная колба (расходомер)</li>
+                                    <li id="btn2" class="list_item">Блок управления (БУ)</li>
+                                    <li id="btn3" class="list_item">Распределитель Badestnost 2Р40-1А1А1 GKZ1</li>
+                                    <li id="btn4" class="list_item">Блок Гидроцилиндров</li>
+                                    <li id="btn5" class="list_item">Блок манометра малый</li>
                                 </ol>
-
+                                <ol class="list_2 col" start="6">
+                                    <li id="btn6" class="list_item">Блок Гидромотор-Гидронасос (Jihostroj)</li>
+                                    <li id="btn7" class="list_item">Блок манометра большой</li>
+                                    <li id="btn8" class="list_item">Насосная станция</li>
+                                    <li id="btn9" class="list_item">Блок дроссельного клапана </li>
+                                </ol>
                             </div>
                           </div>
                         </div>
@@ -184,12 +193,66 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    <script>
-        $(document).ready(function(){  //дожидаемся загрузки страницы
-            $('#btn1').on("click", function(){  //вешаем событие на клик по кнопке id="btn1"
-                $('#text').toggle(); //включает/выключает элемент id="text"
-            });
-        });
-        </script>
+    <script>     
+    $( document ).ready(function() {
+    $('#btn1').mouseenter(function(){
+        $('#second').animate({opacity:1},500);
+    });
+    $('#btn2').mouseenter(function(){
+        $('#third').animate({opacity:1},500);
+    });
+    $('#btn3').mouseenter(function(){
+        $('#fourth').animate({opacity:1},500);
+    });
+    $('#btn4').mouseenter(function(){
+        $('#fifth').animate({opacity:1},500);
+    });
+    $('#btn5').mouseenter(function(){
+        $('#sixth').animate({opacity:1},500);
+    });
+    $('#btn6').mouseenter(function(){
+        $('#seventh').animate({opacity:1},500);
+    });
+    $('#btn7').mouseenter(function(){
+        $('#eighth').animate({opacity:1},500);
+    });
+    $('#btn8').mouseenter(function(){
+        $('#ninth').animate({opacity:1},500);
+    });
+    $('#btn9').mouseenter(function(){
+        $('#tenth').animate({opacity:1},500);
+    });
+
+
+
+    $('#btn1').mouseleave(function(){
+        $('#second').animate({opacity:0},500);
+    });
+    $('#btn2').mouseleave(function(){
+        $('#third').animate({opacity:0},500);
+    });
+    $('#btn3').mouseleave(function(){
+        $('#fourth').animate({opacity:0},500);
+    });
+    $('#btn4').mouseleave(function(){
+        $('#fifth').animate({opacity:0},500);
+    });
+    $('#btn5').mouseleave(function(){
+        $('#sixth').animate({opacity:0},500);
+    });
+    $('#btn6').mouseleave(function(){
+        $('#seventh').animate({opacity:0},500);
+    });
+    $('#btn7').mouseleave(function(){
+        $('#eighth').animate({opacity:0},500);
+    });
+    $('#btn8').mouseleave(function(){
+        $('#ninth').animate({opacity:0},500);
+    });
+    $('#btn9').mouseleave(function(){
+        $('#tenth').animate({opacity:0},500);
+    });
+    });
+    </script>
 </body>
 </html>

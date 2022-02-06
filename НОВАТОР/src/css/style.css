@@ -259,14 +259,78 @@ a:visited{
 /*ARTICLE DEVICE*/
 
 .device{
-    height: 500px;
+    height: 750px;
     width: 100%;
-    background: url(../img/device.png) center/cover no-repeat;
+    background: url(../img/first.png) center/cover no-repeat;
 }
 
 
-.img_drosel{
-    height: 150px;
-    margin-left: 15px;
-    margin-top: 15px;
+.img{
+    height: 750px;
+    width: 1299px;
+}
+ 
+#first{
+    opacity: 1;
+}
+ 
+#second{
+    opacity: 0;
+    margin: auto;
+    
+    position: absolute;
+}
+
+#third{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#fourth{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#fifth{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#sixth{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#seventh{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#eighth{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#ninth{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#tenth{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+/*LIST*/
+
+.list_item{
+    font-size: 25px;
 }
