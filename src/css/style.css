@@ -256,14 +256,14 @@ a:visited{
 
 
 .device{
-    height: 750px;
+    height: 650px;
     width: 1299px;
     background-size: cover;
 }
 
 
 .img{
-    height: 750px;
+    height: 650px;
     width: 1299px;
 }
 
@@ -329,31 +329,41 @@ a:visited{
     position: absolute;
 }
 
+.list_item{
+    font-size: 25px;
+}
+
 @media (max-width:1400px) {
     .device{
-        width: 1199px;
+        width: 1170px;
     }
     .img{
-        width: 1199px;
+        width: 1170px;
         
     }
     .navbar_items{
         margin-left: 70px;
     }
-    
+    .list_item{
+        font-size: 20px;
+    }
 }
 
 @media (max-width:1200px) {
     .device{
-        width: 1099px;
+        height: 550px;
+        width: 1026px;
     }
     .img{
-        width: 1099px;       
+        height: 500px;
+        width: 1000px;       
     }
     .navbar_items{
         margin-left: 40px;
     }
-    
+    .list_item{
+        font-size: 20px;
+    }
 }
 
 @media (max-width:992px) {
@@ -362,9 +372,6 @@ a:visited{
     }
     .img{
         width: 900px;
-    }
-    .container{
-
     }
 }
 
@@ -379,6 +386,3 @@ a:visited{
 
 /*LIST*/
 
-.list_item{
-    font-size: 25px;
-}
