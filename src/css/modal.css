@@ -1,0 +1,128 @@
+.modalwrapper {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    perspective: 1000 px;
+}
+
+
+.open_modal_2 {
+    display: block;
+    font-weight: 800;
+    border: 1 px solid #fff;
+    line-height: 50px;
+    text-transform: uppercase;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.modal.poehali {
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    margin-top: 0;
+}
+
+.modal {
+    background: #fff;
+    border-radius: 5 px;
+    padding: 20 px;
+    top: 50%;
+    width: 350 px;
+    bottom: auto;
+    left: 50%;
+    margin-top: 100 px;
+    transform: translate(-50%,0%) rotateX( 50deg) scale(.6);
+    opacity: 0;
+    z-index: 10002;
+    box-sizing: border-box;
+    transition: 1s;
+    display: none;
+    position: absolute;
+}
+
+.modal h3 {
+    color: #000;
+    font-size: 26px;
+    line-height: 43px;
+    padding-right: 40 px;
+}
+.modal .close_modal{
+    background: #34B1DA;
+    line-height: 35px;
+    font-size: 20px;
+    color: #fff;
+    width: 35 px;
+    height: 35 px;
+    border-radius: 5 px;
+    right: 25 px;
+    top: 25 px;
+    position: absolute;
+    z-index: 999999;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal .comment {
+    color: #000;
+    text-align: center;
+}
+
+p {
+    line-height: 21px;
+}
+
+.modal input[type="text"] {
+    line-height: 40px;
+    font-size: 20px;
+    border: 1 px solid #888;
+    margin-bottom: 10 px ;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.modal button[type="submit"] {
+    background: #34B1DA;
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 0 #828832;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+button {
+    appearance: auto;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
