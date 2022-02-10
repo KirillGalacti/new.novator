@@ -625,7 +625,6 @@ progress {
 .container-fluid,
 .container-xxl,
 .container-xl,
-.container-lg,
 .container-md,
 .container-sm {
   width: 100%;
@@ -635,24 +634,37 @@ progress {
   margin-left: auto;
 }
 
+
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 100%;
+    padding-right: var(--bs-gutter-x, 0rem);
+    padding-left: var(--bs-gutter-x, 0rem);
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    max-width: 100%;
+    padding-right: var(--bs-gutter-x, 0rem);
+    padding-left: var(--bs-gutter-x, 0rem);
   }
+
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 992px;
+    padding-right: var(--bs-gutter-x, 0rem);
+    padding-left: var(--bs-gutter-x, 0rem);
   }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
+  }
+  .container-lg{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media (min-width: 1400px) {
@@ -661,7 +673,7 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 0rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -671,7 +683,6 @@ progress {
 }
 .row > * {
   flex-shrink: 0;
-  width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -4060,12 +4071,23 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  height: 70px;
+  width: 70px;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
   transition: box-shadow 0.15s ease-in-out;
+}
+@media (max-width:768px) {
+  .navbar-toggler {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4083,8 +4105,8 @@ textarea.form-control-lg {
 
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 24px;
+  height: 28px;
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center;
@@ -4122,6 +4144,7 @@ textarea.form-control-lg {
     display: none;
   }
   .navbar-expand-sm .offcanvas-header {
+    
     display: none;
   }
   .navbar-expand-sm .offcanvas {
@@ -4661,6 +4684,13 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
     transition: none;
+    width: 118.56px;
+  }
+}
+@media (max-width:1200px) {
+  .accordion-button {
+    width: 170px;
+    padding: 1rem 2.25rem;
   }
 }
 .accordion-button:not(.collapsed) {
@@ -4706,6 +4736,11 @@ textarea.form-control-lg {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
+@media (max-width:1200px) {
+  .accordion-item {
+    width: 170px;
+  }
+}
 .accordion-item:first-of-type {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -4732,6 +4767,12 @@ textarea.form-control-lg {
 
 .accordion-body {
   padding: 1rem 2.25rem;
+}
+
+@media (max-width:1200px) {
+  .accordion-body{
+      padding:0rem 0rem;
+  }
 }
 
 .accordion-flush .accordion-collapse {
@@ -6255,6 +6296,7 @@ textarea.form-control-lg {
   background-clip: padding-box;
   outline: 0;
   transition: transform 0.3s ease-in-out;
+  background: #F2F2F2;
 }
 @media (prefers-reduced-motion: reduce) {
   .offcanvas {
@@ -6279,6 +6321,7 @@ textarea.form-control-lg {
 }
 
 .offcanvas-header {
+  background: #ebebeb;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6299,13 +6342,13 @@ textarea.form-control-lg {
 .offcanvas-body {
   flex-grow: 1;
   padding: 1rem 1rem;
-  overflow-y: auto;
+  
 }
 
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 400px;
+  width: 300px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);
 }
@@ -7820,6 +7863,12 @@ textarea.form-control-lg {
 
 .bg-dark {
   background: #464646;
+}
+
+@media(max-width:992px){
+  .bg-dark {
+    background: #f2f2f2;
+  }
 }
 
 .bg-black {

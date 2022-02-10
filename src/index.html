@@ -12,18 +12,43 @@
 </head>
 <div class="offcanvas offcanvas-start d-block d-lg-none" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
     <div class="offcanvas-header">
-      <h5 id="offcanvasLeftLabel">Offcanvas справа</h5>
+      <h5 id="offcanvasLeftLabel"></h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
     </div>
     <div class="offcanvas-body">
-      ...
+        <ul class="navbar_menu_offcanvas"> 
+            <li class="navbar_items_offcanvas">
+                <a href="http://new.novatorlab.ru/ru/o-nas" class="navbar_link_offcanvas">О компании</a>
+            </li>
+            <li class="navbar_items_offcanvas">
+                <a href="http://new.novatorlab.ru/ru/dostavka" class="navbar_link_offcanvas">Заказ</a>
+            </li>   
+            <li class="navbar_items_offcanvas">
+                <a href="http://new.novatorlab.ru/ru/podderzhka" class="navbar_link_offcanvas">Поддержка</a>
+            </li> 
+            <li class="navbar_items_offcanvas">
+                <a href="http://new.novatorlab.ru/ru/novosti" class="navbar_link_offcanvas">Новости</a>
+            </li> 
+            <li class="navbar_items_offcanvas">
+                <a href="http://new.novatorlab.ru/ru/kontakty" class="navbar_link_offcanvas">Контакты</a>
+            </li>
+        </ul>
     </div>
+    
   </div>
 <body>
     <!--Header-->
     <header class="header">
-        <div class="container">
+        
+        <div class="container container-lg container-sm">
+            
             <div class="header_inner">
+                <nav class="navbar navbar-dark bg-dark d-block d-lg-none d-md-block">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+                
                 <div class="header_logo">
                     <img src="img/logo-rus.png" alt="Логотип Novator">
                 </div>
@@ -40,7 +65,11 @@
                         </script><br>
                     <span class="open_modal open_modal_2">Обратный звонок</span>
                 </div>
+                <div class="blue_squere ">
+
+                </div>
             </div>
+            
         <!--NAVBAR-->
         <nav class="navbar navbar-dark bg-dark">
             <div class="d-none d-lg-block">
@@ -62,20 +91,83 @@
                     </li>
                 </ul>
             </div>
-            <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
-                <span class="navbar-toggler-icon"></span>
-
-            
         </nav>
     </div>
     </header>
-
-
+    
+    
     <main>
-
+        <div class="container container-lg container-sm">
+            <div class="row">
+                <aside class="aside d-block d-xl-none">
+                        <div class="accordion accordion-flush col-2 col-xl-2" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  Основные элементы
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ol class="list_1">
+                                        <li id="btn11" class="list_item">Измерительная колба (расходомер)</li>
+                                        <li id="btn22" class="list_item">Блок управления (БУ)</li>
+                                        <li id="btn33" class="list_item">Распределитель Badestnost 2Р40-1А1А1 GKZ1</li>
+                                        <li id="btn44" class="list_item">Блок Гидроцилиндров</li>
+                                        <li id="btn55" class="list_item">Блок манометра малый</li>
+                                        <li id="btn66" class="list_item">Блок Гидромотор-Гидронасос (Jihostroj)</li>
+                                        <li id="btn77" class="list_item">Блок манометра большой</li>
+                                        <li id="btn88" class="list_item">Насосная станция</li>
+                                        <li id="btn99" class="list_item">Блок дроссельного клапана </li>
+                                    </ol>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Элемент аккордеона #2
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Элемент аккордеона #3
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                              </div>
+                            </div>
+                        </div>
+                </aside>
+                <div class="device d-xl-none d-block">
+                    <div class="hidden_block">
+                        <div class="container container-lg">
+                            <img src="img/first.png" alt="" class="img" id="first_1">
+                            <img src="img/flask.png" alt="" class="img" id="second_2">
+                            <img src="img/control_unit.png" alt="" class="img" id="third_3">
+                            <img src="img/hydraulic.png" alt="" class="img" id="fourth_4">
+                            <img src="img/hydraulic_cilindres.png" alt="" class="img" id="fifth_5">
+                            <img src="img/manometer.png" alt="" class="img" id="sixth_6">
+                            <img src="img/motor.png" alt="" class="img" id="seventh_7">
+                            <img src="img/pressure_gauge_with_distributor.png" alt="" class="img" id="eighth_8">
+                            <img src="img/pumping_station.png" alt="" class="img" id="ninth_9">
+                            <img src="img/throttles.png" alt="" class="img" id="tenth_10">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
 
         <section>
-            <div class="container">
+                
+            <div class="container container-lg container-sm d-xl-block d-none">
                 <div class="device">
                     <div class="hidden_block">
                         <div class="drosel">
@@ -91,10 +183,10 @@
                             <img src="img/throttles.png" alt="" class="img" id="tenth">
                         </div>
                     </div>
-                    <!--Создать блоки и подогнать их по элементам установки-->
+
                 </div>
                 
-                <div class="container">
+                <div class="container container-lg container-sm">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingOne">
@@ -155,7 +247,7 @@
     </main>
 
     <footer class="footer">
-        <div id="container">
+        <div id="container container-lg container-sm">
             <div class="main">
                 <div class="custom"  >
                     <div class="first footer-block">
@@ -170,11 +262,11 @@
                     </div>
                     <div class="second footer-block">
                         <h4 class="footer_title">Оставьте заявку и мы сами перезвоним</h4>
-                        <!-- Button trigger modal -->
+                        
                         <button type="button" class="btnn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                              Оставить заявку
                         </button>
-                        <!-- Modal -->
+                        
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                             <div class="modal-content">
@@ -271,5 +363,67 @@
     });
     });
     </script>
+    <script>
+    $( document ).ready(function() {
+        $('#btn11').mouseenter(function(){     
+            $('#second_2').animate({opacity:1},500);
+        });
+        $('#btn22').mouseenter(function(){      
+            $('#third_3').animate({opacity:1},500);
+        });
+        $('#btn33').mouseenter(function(){
+            $('#fourth_4').animate({opacity:1},500);
+        });
+        $('#btn44').mouseenter(function(){
+            $('#fifth_5').animate({opacity:1},500);
+        });
+        $('#btn55').mouseenter(function(){
+            $('#sixth_6').animate({opacity:1},500);
+        });
+        $('#btn66').mouseenter(function(){     
+            $('#seventh_7').animate({opacity:1},500);
+        });
+        $('#btn77').mouseenter(function(){      
+            $('#eighth_8').animate({opacity:1},500);
+        });
+        $('#btn88').mouseenter(function(){      
+            $('#ninth_9').animate({opacity:1},500);
+        });
+        $('#btn99').mouseenter(function(){      
+            $('#tenth_10').animate({opacity:1},500);
+        });
+    
+    
+    
+        $('#btn11').mouseleave(function(){      
+            $('#second_2').animate({opacity:0},500);
+        });
+        $('#btn22').mouseleave(function(){     
+            $('#third_3').animate({opacity:0},500);
+        });
+        $('#btn33').mouseleave(function(){      
+            $('#fourth_4').animate({opacity:0},500);
+        });
+        $('#btn44').mouseleave(function(){       
+            $('#fifth_5').animate({opacity:0},500);
+        });
+        $('#btn55').mouseleave(function(){       
+            $('#sixth_6').animate({opacity:0},500);
+        });
+        $('#btn66').mouseleave(function(){       
+            $('#seventh_7').animate({opacity:0},500);
+        });
+        $('#btn77').mouseleave(function(){      
+            $('#eighth_8').animate({opacity:0},500);
+        });
+        $('#btn88').mouseleave(function(){
+     
+            $('#ninth_9').animate({opacity:0},500);
+        });
+        $('#btn99').mouseleave(function(){
+            $('#tenth_10').animate({opacity:0},500);
+        });
+        });
+        </script>
 </body>
 </html>
