@@ -347,11 +347,50 @@ a:visited{
     position: absolute;
 }
 
+#eleventh{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#twelfth{
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
 .list_item{
     font-size: 22px;
     font-weight: 500;
 }
 
+.hover_base,
+.hover_standart,
+.hover_expert {
+    cursor: pointer;
+  }
+  
+  .hover-parent {
+    width: 200;
+    height: 300;
+  }
+  
+  .img-parent_base,
+  .img-parent_standart,
+  .img-parent_expert {
+    position: absolute;
+    top: 15;
+    left: 250;
+    padding: 10;
+    width: 200;
+    height: 300;
+    text-align: center;
+    z-index: auto;
+  }
+  
+  .z {
+    z-index: 1;
+  }
 
 
 /*ASIDE*/
